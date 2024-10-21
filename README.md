@@ -1,11 +1,9 @@
-# Projeto SPA
+# Projeto Github Favorites
 
-![alt text](./readme/image1.png)
-![alt text](./readme/image2.png)
-![alt text](./readme/image3.png)
+![alt text](./readme/image.png)
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
--   HTML, CSS, node e JS
+-   HTML, CSS e JS
