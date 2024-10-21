@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-primary: "Roboto", serif;
+    --text-color: #303030;
+    --hue: 194;
+    --primary-color: hsl(var(--hue), 100%, 63%)
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+body * {
+    font-family: var(--ff-primary);
+}
+
+#app {
+    max-width: 50rem;
+    margin: 0 auto;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+
+        h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+
+            input {
+                height: 3.2rem;
+                border: 1px solid #ccc;
+                border-radius: .4rem 0 0 .4rem;
+                padding: .8rem;
+            }
+
+            button {
+                background-color: var(--primary-color);
+                border-radius: 0 .4rem .4rem 0;
+                height: 3.2rem;
+                border: none;
+                padding: 0 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+table {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+table th {
+    background: var(--primary-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.6rem;
+    text-transform: uppercase;
+}
+
+table th:first-child {
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .4rem;
+}
+
+table tr:nth-child(odd) {
+    background: #eae7e7;
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td .remove {
+    background: red;
+    border: none;
+    padding: .4rem;
+    border-radius: .4rem;
+    transition: all .5s ease;
+    cursor: pointer;
+
+    .ph-trash {
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+.ph-plus-square {
+    font-size: 2rem;
+}
